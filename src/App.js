@@ -1,7 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Cookies from "universal-cookie";
 
 function App() {
+  const cookies = new Cookies();
+  cookies.set("myCat", "Pacman", { path: "/" });
+  console.log(cookies.get("myCat")); // Pacman
   return (
     <div className="App">
       <header className="App-header">
