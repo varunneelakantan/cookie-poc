@@ -1,13 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
-import Cookies from "universal-cookie";
+import { Cookies } from "react-cookie";
+import { useEffect } from "react";
 
 function App() {
-  const cookies = new Cookies();
-  cookies.set("domain2", "FromDomain2", { path: "/", domain:".azurestaticapps.net" });
-  console.log(cookies.get("domain2")); 
-  console.log(cookies.get("domain1")); 
-  
+  useEffect(() => {
+    const cookies = new Cookies();
+    cookies.set("domain1", "HelloDomain1", { path: "/", domain: ".azurestaticapps.net" });
+    console.log(cookies.get("myCat"));
+  }, []);
+
   return (
     <div className="App">
       <header className="App-header">
