@@ -6,7 +6,7 @@ import { useEffect } from "react";
 function App() {
   useEffect(() => {
     const cookies = new Cookies();
-    cookies.set("domain1", "HelloDomain1", { path: "/", domain: ".azurestaticapps.net" });
+    cookies.set("domain1", "HelloDomain1", { path: "/", domain: "mango-coast-0d5a9ea10.3.azurestaticapps.net" });
     console.log(cookies.get("myCat"));
   }, []);
 
