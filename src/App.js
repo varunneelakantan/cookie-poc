@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import Cookies from '';
+import Cookies from 'js-cookie';
 
 const App = () => {
   useEffect(() => {
