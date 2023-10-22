@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div>
-      {/* Your component JSX */}
+      <p>{process.env.REACT_APP_NOT_SECRET_CODE}</p>
     </div>
   );
 };
